@@ -1,0 +1,78 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- Product lines Servlets -->
+	<servlet>
+		<servlet-name>productlinesServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductlinesController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productlinesServlet</servlet-name>
+		<url-pattern>/productlines</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>productlinesEditServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductlinesEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productlinesEditServlet</servlet-name>
+		<url-pattern>/productlinesEdit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>productlinesInsertServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductlinesInsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productlinesInsertServlet</servlet-name>
+		<url-pattern>/productlinesInsert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>productlinesDeleteServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductlinesDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productlinesDeleteServlet</servlet-name>
+		<url-pattern>/productlinesDelete</url-pattern>
+	</servlet-mapping>
+
+	<!-- Products Servlets -->
+	<servlet>
+		<servlet-name>productsServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productsServlet</servlet-name>
+		<url-pattern>/products</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>productsEditServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductsEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productsEditServlet</servlet-name>
+		<url-pattern>/productsEdit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>productsInsertServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductsInsertController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productsInsertServlet</servlet-name>
+		<url-pattern>/productsInsert</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>productsDeleteServlet</servlet-name>
+		<servlet-class>com.j2ee.controller.ProductsDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productsDeleteServlet</servlet-name>
+		<url-pattern>/productsDelete</url-pattern>
+	</servlet-mapping>
+</web-app>
